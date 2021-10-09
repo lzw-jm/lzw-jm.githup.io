@@ -52,6 +52,7 @@
         top: 30%;
         text-align: center;
         animation: section 1s linear infinite;
+        border-radio:100px;
     }
      @keyframes section {
     from{box-shadow: 0 0 0 black;}
