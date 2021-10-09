@@ -51,8 +51,12 @@
         left: 43%;
         top: 30%;
         text-align: center;
+        animation: section 1s linear infinite;
     }
-
+     @keyframes section {
+    from{box-shadow: 0 0 0 black;}
+    to{box-shadow: 0 0 20px black;}
+    }
     .section-pc {
         width: 200px;
         height: 200px;
