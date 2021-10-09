@@ -1,1 +1,116 @@
 
+    body {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    #outer {
+        position: relative;
+        height: 730px;
+        background-color: #36cfc9;
+
+        width: 1535px;
+    }
+
+    .top-img {
+        animation: cloud 5s ease-in backwards;
+        position: absolute;
+        left: 620px;
+        top: 20px;
+        color: white;
+        font-size: 30px;
+    }
+
+    @keyframes cloud {
+        0% {
+            transform: translate(-600px, 0);
+        }
+
+        25% {
+            transform: translate(0);
+        }
+
+        50% {
+            opacity: .5;
+        }
+
+        60% {
+            opacity: 1;
+        }
+        75% {
+            transform: translate(0, 10px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+
+    .section {
+        position: absolute;
+        left: 43%;
+        top: 30%;
+        text-align: center;
+    }
+
+    .section-pc {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: white;
+        animation: midpc 3s linear 5s;
+    }
+    @keyframes midpc {
+        0% {
+            transform: translate(0px, -500px) scale(.5);
+        }
+
+        25% {
+            transform: translate(0) scale(1);
+        }
+        50% {
+            transform: rotate(0) scale(.5)
+        }
+        100% {
+            transform: rotate(360deg) ;
+        }
+    }
+    .text-ani {
+        animation: text 3s infinite 8s;
+        position: absolute;
+        bottom: -20px;
+        left: 5px;
+    }
+
+    @keyframes text {
+        from {
+            transform: skew(0deg);
+        }
+
+        50% {
+            transform: skew(20deg);
+        }
+        75%{
+            transform: skew(-20deg);
+        }
+        to{
+            transform: skew(0deg);
+        }
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 50px;
+        left: 46%;
+        width: 100px;
+        height: 20px;
+        background-color: white;
+        text-align: center;
+        cursor: pointer;
+        animation: next 3s infinite linear 11s;
+    }
+    @keyframes next{
+        from{box-shadow: 0 0 0 white; text-shadow: 0 0 0 black;}
+        to{box-shadow: 0 0 30px white; text-shadow: 0 0 5px black;}
+    }
+
