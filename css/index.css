@@ -63,7 +63,7 @@
         height: 200px;
         border-radius: 50%;
         background-color: white;
-        animation: midpc 3s linear 5s;
+        animation: midpc 3s linear 5s forwards;
         position:relative;
         top:-600px;
     }
@@ -94,13 +94,14 @@
         from {
             transform: skew(0deg);
         }
-
+        25%{opacity:.5;}
         50% {
             transform: skew(20deg);
         }
         75%{
             transform: skew(-20deg);
         }
+        90%{opacity:1;}
         to{
             transform: skew(0deg);
         }
