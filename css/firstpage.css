@@ -119,12 +119,10 @@ body {
 
 .section-text {
     overflow: hidden;
-    height: 64px;
     display: inline-block;
     margin-left: 70px;
     border-left: 5px solid #cccc;
     text-overflow: ellipsis;
-    line-height: 32px;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical
