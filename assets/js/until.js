@@ -79,67 +79,68 @@ export class Url {
 
 }
 // 把html里面的#转换成h标签
-export class Markdown {
-    constructor(props) {
-        this.el = props.el;
-        //innerText拿到的文本没有换行
-        this.content = props.el.textContent;
-    }
-    parse() {
-        return this.parseHtml(this.content);
-    }
-    parseHtml(text) {
-        let flag = false;
-        let reg = /(#+)\s+([^\n]+)/;
-        //只拿带#号的
-        let res = text.replace(reg, function (item) {
-        //每次都拿一行出来,次改之后#键不在就会把后面有#的取出来去修改
-                flag = true;
-                if (RegExp.$1.length) {
-                    let n = RegExp.$1.length > 6 ? 6 : RegExp.$1.length;
-                    let content = RegExp.$2;
-                    return `<h${n}>${content}</h${n}>`;
-                } else {
-                    let content = RegExp.$2;
-                    return `<p>${content}</p>`;
-                }
-        })
-        if (flag) {
-            res = this.parseHtml(res);
-        }
-        return res;
-    }
-}
-
-// //磊哥
-// class Markdown{
-//     static TITLE_REG = /(#+)\s+([^\n]+)/;
-//     constructor(text){
-//         this.text = text;
+// export class Markdown {
+//     constructor(props) {
+//         this.el = props.el;
+//         //innerText拿到的文本没有换行
+//         this.content = props.el.textContent;
 //     }
-//     parse(){
-//         return this.text.replace(/.+/g,(item)=>{
-//             if(Markdown.isTitle(item)){
-//                 return this.parseTitle(item);
-//             }else{
-//                 return this.parseParagraph(item)
-//             }
+//     parse() {
+//         return this.parseHtml(this.content);
+//     }
+//     parseHtml(text) {
+//         let flag = false;
+//         let reg = /(#+)\s+([^\n]+)/;
+//         //只拿带#号的
+//         let res = text.replace(reg, function (item) {
+//         //每次都拿一行出来,次改之后#键不在就会把后面有#的取出来去修改
+//                 flag = true;
+//                 if (RegExp.$1.length) {
+//                     let n = RegExp.$1.length > 6 ? 6 : RegExp.$1.length;
+//                     let content = RegExp.$2;
+//                     return `<h${n}>${content}</h${n}>`;
+//                 } else {
+//                     let content = RegExp.$2;
+//                     return `<p>${content}</p>`;
+//                 }
 //         })
-//     }
-//     parseParagraph(text){
-//         return text.trim().length ? `<p>${text.trim()}</p>` : '';
-//     }
-//     parseTitle(text){
-//         return text.replace(Markdown.TITLE_REG,function(item){
-//             let n = RegExp.$1.length > 6 ? 6 : RegExp.$1.length;  // 1-6个#号；
-//             let textConent = RegExp.$2;
-//             return `<h${n}>${textConent}</h${n}>`;
-//         })
-//     }
-//     static isTitle(val){
-//         return Markdown.TITLE_REG.test(val);
+//         if (flag) {
+//             res = this.parseHtml(res);
+//         }
+//         return res;
 //     }
 // }
+
+// //磊哥
+export class Markdown {
+    static TITLE_REG = /(#+)\s+([^\n]+)/;
+    constructor(props) {
+        this.text = props.text;
+        console.log(this.text)
+    }
+    parse() {
+        return this.text.replace(/.+/g, (item) => {
+            if (Markdown.isTitle(item)) {
+                return this.parseTitle(item);
+            } else {
+                return this.parseParagraph(item)
+            }
+        })
+    }
+    parseParagraph(text) {
+        return text.trim().length ? `<p>${text.trim()}</p>` : '';
+    }
+    parseTitle(text) {
+        return text.replace(Markdown.TITLE_REG, function (item) {
+            let n = RegExp.$1.length > 6 ? 6 : RegExp.$1.length; // 1-6个#号；
+            let textConent = RegExp.$2;
+            return `<h${n}>${textConent}</h${n}>`;
+        })
+    }
+    static isTitle(val) {
+        return Markdown.TITLE_REG.test(val);
+    }
+}
 
 //作业一：
 // var url = new Url('localhost:8080?type=2&id=1&name=xiaoming');

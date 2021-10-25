@@ -2,23 +2,14 @@
     <h1>10-17-10-22第二周周记</h1>
 <article>
 1. 正则表达式的作用是匹配符合规则的字符串,只对字符有用
-
 2. 默认赋值,形参可以赋值,方法的入参必传项参数放前面,非必填项放后面
-
 3. 数据中的id是标识,用来和服务端交互的不是指向客户端
-
 4. 如果需要flag开关可以考虑把flag放在一个闭包里面,避免全局变量的污染
-
 5. settimeout setinterval 可以解决同步执行的问题
-
 6. 重绘和回流,只要改变一个dom元素,页面就会重新渲染,重绘和回流只会同时发生,文档碎片(fragment)减少了重绘和回流,提高了性能
-
 7. template模板不会渲染到页面,专门用来克隆的模板;获取template里面的元素用content
-
 8. DOM.remove()不会把变量的值删掉
-
 9. promise 回调地狱  成功时调用resolve接着会走到then方法 失败时调用reject接着会走到catch方法  async和await同时出现
-
    1. ````javascript
       function getUserInfo(){
           return new promise((resolve,reject)=>{
@@ -45,25 +36,16 @@
           console.log(orderList);
       })();
       ````
-
 10. el.style.cssText js修改页面样式时使用,可以减少重绘和回流
-
     1. ```javascript
        el.style.cssText = 'color:white;fontSize:18px'
        ```
-
 11. 类里面的get方法,底层用的是Object.defineProperty,当我们调用这个属性的时候就会直接走到这个方法里面
-
 12. innerHTML.innerText,textContent 优先级最高的是textContent 下来是innerText 最后是innerHTML;
-
 13. data-()自定义属性,需要拿到这个属性的值用dataset.().<!--考虑兼容性用后面这个-->还有setAttribute(data-());
-
 14. target 是目标 props 参数 options 选项,类当中constructor的参数可以用这几个
-
 15. forEach中不能用break;因为他还是会把所有元素都遍历一遍,最好用for循环
-
 16. 字面量字符var a = "hello world" 和 var a = new String('hello world')
-
 17. new出来的都是对象;
 </article>
 </template>

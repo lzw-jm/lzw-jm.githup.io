@@ -3,7 +3,8 @@ import {
 } from '../../assets/js/translate'
 import Translate from '../../assets/js/translate'
 import articles from '../content'
-import {Url} from '../../assets/js/until'
+import { Url } from '../../assets/js/until'
+import { Markdown } from '../../assets/js/until'
 let leftPage = new Animata(new Translate({
     targets: [{
             el: document.querySelector('.mleft-top'),
@@ -64,35 +65,11 @@ articles.forEach(article => {
         let newDiv = cloneDiv.content.cloneNode(true);
         newDiv.querySelector('.title-text').innerHTML = article.article;
         clonePar.appendChild(newDiv);
-        // newDiv.querySelector('.htitle').innerHTML = article.title;
-        // if (article.article.length > 200) {
-        //     //是否要生成打开全部内容按钮
-        //     let span = document.createElement('span');
-        //     span.className = 'openall';
-        //     span.innerHTML = '全部内容';
-        //     newDiv.children[0].appendChild(span);
-        //     newDiv.querySelector('.title-text').innerHTML = article.article.ellipsis(140);
-        //     span.addEventListener('click', function () {
-        //         if (flag) {
-        //             console.log(this);
-        //             this.innerHTML = '收起内容';
-        //             this.parentNode.querySelector('.title-text').innerHTML = article.article;
-        //             this.parentNode.querySelector('.title-text').innerHTML = this.parentNode.querySelector('.title-text').innerHTML.replace(/\n/g, '</br>');
-        //             this.parentNode.querySelector('.title-text').innerHTML = this.parentNode.querySelector('.title-text').innerHTML.replace(/\s/g, '');
-        //             flag = false;
-        //         } else {
-        //             this.innerHTML = '全部内容';
-        //             this.parentNode.querySelector('.title-text').innerHTML = article.article.ellipsis(140);
-        //             flag = true;
-        //         }
-        //     })
-        // } else {
-        //     newDiv.querySelector('.title-text').innerHTML = article.article;
-        // }
     }
 })
 
-
-
-// var url = new Url('localhost:8080?type=2&id=1&name=xiaoming')
-// console.log(url.get('name'))
+let res = new Markdown({
+    text: document.querySelector('article').textContent
+});
+res = res.parse();
+document.querySelector('article').innerHTML = res;
