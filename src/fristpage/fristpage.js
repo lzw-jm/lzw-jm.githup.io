@@ -57,10 +57,8 @@ String.prototype.ellipsis = function (num) {
     return str;
 }
 var flag = true;
-console.log(window.location.search.substring(window.location.search));
 let url = new Url(window.location.href);
 let textId = url.get('id');
-console.log(textId);
 articles.forEach(article => {
     if (article.id == textId) {
         let newDiv = cloneDiv.content.cloneNode(true);

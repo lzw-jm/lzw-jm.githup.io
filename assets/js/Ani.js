@@ -4,7 +4,6 @@ export default class Name {
         this.targets = name.targets;
         this.count = name.count;
         this.newTargets = this.targets.slice();
-        console.log(this.newTargets);
     }
     //方法名最好用动词
     change() {
@@ -17,7 +16,6 @@ export default class Name {
                 targets.el.removeEventListener('animationend', cartoon);
                 _this.change();
             }
-            console.log(targets);
             targets.el.classList.add(targets.animationClassName);
             targets.el.addEventListener('animationend', cartoon);
         } else {

@@ -7,7 +7,6 @@ let md = new Markdown({
     el: document.querySelector('article')
 });
 let res = md.parse();
-console.log(res)
 content.innerHTML = res;
 //输出html
 //作业二：
@@ -36,9 +35,7 @@ function format(){
     })
 }
 let result = format();
-console.log(result)
 //作业三：
 var text = '{{ username }}';
 // username是一个变量  用正则匹配到 username;
 var a = /(?<=\{\{\s*)\S+(?=\s*\}\})/.exec(text)[0];
-console.log(a)

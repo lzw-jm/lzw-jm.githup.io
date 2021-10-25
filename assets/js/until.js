@@ -90,7 +90,7 @@ export class Markdown {
     }
     parseHtml(text) {
         let flag = false;
-
+        let reg = /(#+)\s+([^\n]+)/;
         //只拿带#号的
         let res = text.replace(reg, function (item) {
         //每次都拿一行出来,次改之后#键不在就会把后面有#的取出来去修改

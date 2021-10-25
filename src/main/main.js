@@ -1,7 +1,7 @@
 import Ellipsis from "../exam/exam";
 let ellipsis = new Ellipsis({
     el: document.querySelector('.content'),
-    textCount: 200,
+    textCount: 140,
     findAllButtonText: "查看内容",
     showFindAllButton: true
 })
