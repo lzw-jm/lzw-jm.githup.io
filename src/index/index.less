@@ -1,0 +1,31 @@
+div {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
+.ani {
+    animation: change 1s forwards;
+}
+
+@keyframes change {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(500px);
+    }
+}
+.opacity{
+    animation: trans 3s forwards;
+}
+@keyframes trans{
+    from{
+        opacity: 0;
+        background-color: black;
+    }
+    to{
+        opacity: 1;
+        background-color: blue;
+    }
+}

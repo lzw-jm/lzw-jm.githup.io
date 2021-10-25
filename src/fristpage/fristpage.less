@@ -3,9 +3,13 @@ body {
     padding: 0;
 }
 
+:root {
+    --h: 150px;
+}
+
 .header-bg {
     background-color: #327ed0;
-    height: 150px;
+    height: var(--h);
     color: white;
 }
 
@@ -52,9 +56,9 @@ body {
     vertical-align: middle;
 }
 
- .mright-toptext {
+.mright-toptext {
     font-size: 10px;
-} 
+}
 
 .mright-text {
     display: flex;
@@ -64,7 +68,7 @@ body {
 
 .section-box {
     width: 60%;
-    height: 500px;
+    height: calc(100vh - --h);
     margin: 0 auto;
     display: flex;
     flex-flow: nowrap;
@@ -76,30 +80,7 @@ body {
     margin-right: 10px;
 }
 
-.head-em,
-.head-em2,
-.head-em1 {
-    color: #48e4f0;
-}
-
 .htitle {
-    width: 20%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 500;
-}
-
-.htitle2 {
-    width: 15%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 500;
-}
-
-.htitle3 {
-    width: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -110,6 +91,16 @@ body {
 .last-text {
     display: inline-block;
     text-indent: 2em;
+    font-size: 14px;
+}
+
+.section-frist {
+    position: relative;
+}
+
+.openall {
+    color: #999999;
+    cursor: pointer;
 }
 
 .section-text {
@@ -124,7 +115,7 @@ body {
     padding-left: 30px;
 }
 
-.section-right div{
+.section-right div {
     width: 60%;
     height: 80px;
     color: white;
@@ -144,10 +135,31 @@ body {
     flex-direction: column;
     border-left: 3px solid #cccc;
 }
-.ani{
+
+.ani {
     animation: move 1s forwards;
 }
-@keyframes move{
-    from{transform: translateX(-500px);}
-    to{transform: translateX(300px);}
+
+@keyframes move {
+    from {
+        transform: translateX(-800px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.rightmove {
+    animation: rmove 1s forwards;
+}
+
+@keyframes rmove {
+    from {
+        transform: translateX(1300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
