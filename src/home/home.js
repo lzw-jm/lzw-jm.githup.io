@@ -31,7 +31,7 @@ function format(){
         let res = deptData.filter(data=>{
             return data.type == item;
         })
-       return res[0].deptName
+       return res[0].deptName;
     })
 }
 let result = format();
