@@ -57,7 +57,6 @@ String.prototype.ellipsis = function (num) {
     }
     return str;
 }
-var flag = true;
 let url = new Url(window.location.href);
 let textId = url.get('id');
 articles.forEach(article => {
@@ -67,7 +66,6 @@ articles.forEach(article => {
         clonePar.appendChild(newDiv);
     }
 })
-
 let res = new Markdown({
     text: document.querySelector('article').textContent
 });

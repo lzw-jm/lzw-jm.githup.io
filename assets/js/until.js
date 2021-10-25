@@ -116,7 +116,6 @@ export class Markdown {
     static TITLE_REG = /(#+)\s+([^\n]+)/;
     constructor(props) {
         this.text = props.text;
-        console.log(this.text)
     }
     parse() {
         return this.text.replace(/.+/g, (item) => {
