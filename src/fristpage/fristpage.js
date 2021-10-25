@@ -62,12 +62,8 @@ let textId = url.get('id');
 articles.forEach(article => {
     if (article.id == textId) {
         let newDiv = cloneDiv.content.cloneNode(true);
-        newDiv.querySelector('.title-text').innerHTML = article.article;
+        let res = new Markdown(article.article);
+        newDiv.querySelector('.title-text').innerHTML = res.parse();
         clonePar.appendChild(newDiv);
     }
 })
-let res = new Markdown({
-    text: document.querySelector('article').textContent
-});
-res = res.parse();
-document.querySelector('article').innerHTML = res;

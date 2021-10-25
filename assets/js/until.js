@@ -115,7 +115,7 @@ export class Url {
 export class Markdown {
     static TITLE_REG = /(#+)\s+([^\n]+)/;
     constructor(props) {
-        this.text = props.text;
+        this.text = props;
     }
     parse() {
         return this.text.replace(/.+/g, (item) => {
