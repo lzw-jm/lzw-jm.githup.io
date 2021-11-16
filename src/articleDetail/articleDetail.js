@@ -14,15 +14,13 @@ let leftPage = new Animata(new Translate({
             el: document.querySelector('.mleft-bot'),
             animationClassName: 'ani'
         },
-
         {
             el: document.querySelector('.section-left'),
             animationClassName: 'ani'
         },
     ]
 }))
-
-leftPage.change()
+leftPage.change();
 let rightpage = new Animata(new Translate({
     targets: [{
             el: document.querySelector('.header-mright'),
@@ -46,8 +44,7 @@ let rightpage = new Animata(new Translate({
         },
     ]
 }))
-rightpage.change()
-
+rightpage.change();
 var cloneDiv = document.querySelector('template');
 var clonePar = document.querySelector('.section-left');
 String.prototype.ellipsis = function (num) {

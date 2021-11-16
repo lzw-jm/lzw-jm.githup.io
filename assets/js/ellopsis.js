@@ -1,4 +1,3 @@
- 
  export default class Ellipsis{
     constructor(param){
         this.text = param.text;
@@ -26,3 +25,4 @@
     }
     //是否显示按钮
 }
+

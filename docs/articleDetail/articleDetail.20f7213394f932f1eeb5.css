@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --h: 150px;
+}
+.header-bg {
+  background-color: #327ed0;
+  height: var(--h);
+  color: white;
+}
+.header-mid {
+  width: 60%;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.mleft-top {
+  font-size: 4em;
+}
+.mleft-bot {
+  font-size: 1em;
+}
+.header-mleft {
+  display: flex;
+  height: 100%;
+  flex-flow: column;
+  justify-content: flex-start;
+  margin-top: 23px;
+}
+.header-mright {
+  width: 150px;
+  height: 70px;
+  border: 1px solid white;
+  margin-top: 40px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 100px;
+  padding: 5px;
+}
+.mright-img img {
+  width: 30px;
+  height: 40px;
+  vertical-align: middle;
+}
+.mright-toptext {
+  font-size: 10px;
+}
+.mright-text {
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+}
+.section-box {
+  width: 60%;
+  height: calc(100vh --h);
+  margin: 0 auto;
+  display: flex;
+  flex-flow: nowrap;
+}
+.section-left {
+  width: 70%;
+  height: 100%;
+  margin-right: 10px;
+}
+.htitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+.title-text,
+.last-text {
+  display: inline-block;
+  text-indent: 2em;
+  font-size: 14px;
+}
+.section-frist {
+  position: relative;
+}
+.openall {
+  color: #999999;
+  cursor: pointer;
+}
+.section-text {
+  overflow: hidden;
+  display: inline-block;
+  margin-left: 70px;
+  border-left: 5px solid #cccc;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  padding-left: 30px;
+}
+.section-right div {
+  width: 60%;
+  height: 80px;
+  color: white;
+  margin-top: 20px;
+  background-color: #327ed0;
+  text-align: center;
+  line-height: 80px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+.section-right {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-left: 3px solid #cccc;
+}
+.ani {
+  animation: move 1s forwards;
+}
+@keyframes move {
+  from {
+    transform: translateX(-800px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+.rightmove {
+  animation: rmove 1s forwards;
+}
+@keyframes rmove {
+  from {
+    transform: translateX(1300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+

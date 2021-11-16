@@ -13,18 +13,18 @@ header {
     background-color: #ffffff;
 
     & .header-top {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content:space-between;
         height: var(--h);
         line-height: var(--h);
     }
 
     & #header-title {
         font-size: 35px;
-        color: #0066ff;
+        color: #9999CC;
     }
 
     & .input-box {
@@ -104,11 +104,14 @@ section {
     & .left-top {
         height: 100px;
         width: 100px;
-        background-color: #0061f2;
         text-align: center;
         line-height: 100px;
         font-size: 40px;
         border-radius: 5px;
+    }
+    & .left-top > img{
+        height: 100px;
+        width: 100px;
     }
 
     & .left-bottom {
@@ -116,12 +119,19 @@ section {
         height: 30px;
         line-height: 30px;
         text-align: center;
-        background-color: #0061f2;
+        background-color: #9999CC;
         border-radius: 5px;
         color: white;
         cursor: pointer;
     }
-
+    & .showmore{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        color: blue;
+        cursor: pointer;
+    }
     & .section-right {
         width: 80%;
         display: flex;
@@ -147,18 +157,8 @@ section {
         color: gray;
         cursor: pointer;
     }
-
-    & .right-bottom {
-        color: gray;
-    }
-
-    & .right-bottom span {
-        display: inline-block;
-        width: 60px;
-    }
-
     & .sidebar {
-        width: 28%;
+        width: 29%;
         margin-left: 5px;
         min-width: 180px;
     }
@@ -258,8 +258,6 @@ section {
         display: inline-block;
 
     }
-
-
     & .center-mid {
         padding: 5px 30px;
     }
@@ -288,12 +286,12 @@ section {
         flex-direction: column;
         justify-content: space-between;
 
-        &>h2 {
+        &>.main-content>h1 {
             font-size: 19px;
             cursor: pointer;
         }
 
-        &>nav>img {
+        &>.main-content>nav>img {
             width: 20px;
             height: 20px;
             vertical-align: middle;

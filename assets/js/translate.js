@@ -74,21 +74,8 @@ export class Animata {
     }
      change() {
         this.ani.change()
-    //   new Translate(this.newTargets)
     }
-    // load() {
-    //     this.model.load()
-    // if (this.type == 'translate') {
-    //     this.model = new Translate();
-    //     this.model.load(this.el)
-    // } else if (this.type == 'opacity') {
-    //     this.model = new Opacity();
-    //     this.model.load(this.el)
-    // }
-    // }
 }
-
-// let animate = Animata.create().use(Translate).mount(document.querySelector('div')
 
 /// 继承
 // export default class Translate extends Animata {

@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #36cfc9;
+}
+#outer {
+  position: relative;
+  height: 760px;
+  width: 1535px;
+}
+.top-img {
+  position: absolute;
+  left: 620px;
+  top: 60px;
+  color: white;
+  font-size: 30px;
+}
+.top-imgani {
+  animation: cloud 1s ease-in forwards;
+}
+@keyframes cloud {
+  0% {
+    transform: translate(-600px, 0);
+  }
+  25% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(10px, 0);
+  }
+  60% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(5px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.section {
+  position: absolute;
+  left: 43%;
+  top: 30%;
+  text-align: center;
+  border-radius: 100px;
+}
+.section-pc {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  top: -600px;
+}
+.section_pcani {
+  animation: midpc 1s linear  forwards;
+}
+@keyframes midpc {
+  0% {
+    transform: translate(0) scale(0.5);
+  }
+  100% {
+    transform: rotate(360deg) translate(0, 600px);
+  }
+}
+.text-ani {
+  position: absolute;
+  bottom: -40px;
+  left: 5px;
+  opacity: 0;
+}
+.section-ani {
+  animation: text 1s forwards;
+}
+@keyframes text {
+  from {
+    transform: skew(0deg);
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    transform: skew(20deg);
+  }
+  75% {
+    transform: skew(-20deg);
+  }
+  to {
+    transform: skew(0deg);
+    opacity: 1;
+  }
+}
+.footer {
+  position: absolute;
+  bottom: 100px;
+  left: 46%;
+  width: 100px;
+  height: 20px;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0;
+}
+.footer-ani {
+  animation: next 3s linear  forwards;
+}
+@keyframes next {
+  from {
+    box-shadow: 0 0 0 white;
+    text-shadow: 0 0 0 black;
+    opacity: 0;
+  }
+  to {
+    box-shadow: 0 0 30px white;
+    text-shadow: 0 0 5px black;
+    opacity: 1;
+  }
+}
+.top-up {
+  animation: up 1s linear forwards;
+}
+@keyframes up {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, -800px);
+  }
+}
+

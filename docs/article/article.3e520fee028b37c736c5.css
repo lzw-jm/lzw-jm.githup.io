@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+}
+:root {
+  --h: 50px;
+}
+header {
+  border: 1px solid #ececec;
+  background-color: #ffffff;
+}
+header .header-top {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: var(--h);
+  line-height: var(--h);
+}
+header #header-title {
+  font-size: 35px;
+  color: #0066ff;
+}
+header .input-box {
+  position: relative;
+  width: 400px;
+  margin-right: 400px;
+}
+header .input {
+  width: 400px;
+  height: 30px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #cccc;
+  background-color: #f6f6f6;
+}
+header .header-text {
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 14px;
+  min-width: 400px;
+}
+header .select-img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0px;
+  top: 15px;
+}
+header .select-img:hover {
+  cursor: pointer;
+}
+section {
+  height: calc(100vh - var(--h));
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+section .section-leftbox {
+  width: 70%;
+  display: flex;
+  height: 100%;
+  min-width: 740px;
+  flex-flow: column;
+}
+section .section-top {
+  height: 20%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  min-height: 150px;
+}
+section .section-left {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: white;
+  min-width: 150px;
+}
+section .left-top {
+  height: 100px;
+  width: 100px;
+  background-color: #0061f2;
+  text-align: center;
+  line-height: 100px;
+  font-size: 40px;
+  border-radius: 5px;
+}
+section .left-bottom {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #0061f2;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+section .showmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: blue;
+  cursor: pointer;
+}
+section .section-right {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+section .right-title {
+  font-weight: bolder;
+  font-size: 21px;
+  margin: 0;
+}
+section .right-text {
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px 0;
+}
+section .right-gray {
+  display: inline-block;
+  color: gray;
+  cursor: pointer;
+}
+section .right-bottom {
+  color: gray;
+}
+section .right-bottom span {
+  display: inline-block;
+  width: 60px;
+}
+section .sidebar {
+  width: 28%;
+  margin-left: 5px;
+  min-width: 180px;
+}
+section .sidebar-top {
+  width: 100%;
+  display: flex;
+  height: 80px;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: #ffffff;
+  min-width: 180px;
+}
+section .sidebar-top div {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  font-size: 100%;
+}
+section .sidebar-center {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: #ffffff;
+  margin-top: 10px;
+  min-height: 400px;
+}
+section .sidebarcenter-top {
+  width: 100%;
+  padding: 5px;
+  height: 30%;
+  min-height: 160px;
+  min-width: 210px;
+}
+section .sidebarcenter-top span {
+  font-size: 50%;
+  height: 20%;
+  display: inline-block;
+  background-color: #e5efff;
+  padding: 5px;
+  color: #947bff;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+section .sidebarcenter-top span:hover {
+  background-color: blue;
+  color: white;
+}
+section .section-center {
+  height: calc(100vh - 80px);
+  background-color: #ffffff;
+  margin-top: 10px;
+  min-height: 550px;
+}
+section .sidebarcenter-bottom span {
+  font-size: 50%;
+  height: 20%;
+  display: inline-block;
+  background-color: #e5efff;
+  padding: 5px;
+  color: #947bff;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+section .sidebarcenter-bottom span:hover {
+  background-color: blue;
+  color: white;
+}
+section .center-top {
+  height: 40px;
+  border-bottom: 1px #cccc solid;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  line-height: 40px;
+}
+section .center-top_left {
+  width: 50%;
+  display: flex;
+  padding-left: 5px;
+  justify-content: space-around;
+}
+section .center-top_left span {
+  display: inline-block;
+}
+section .center-mid {
+  padding: 5px 30px;
+}
+section .intro-content {
+  display: none;
+}
+section .cream-content {
+  display: none;
+}
+section .talk-content {
+  display: none;
+}
+section .answer-content {
+  display: none;
+}
+section .index-content {
+  margin: 0 auto;
+  border-bottom: 1px solid #cccc;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section .index-content > .main-content > h1 {
+  font-size: 19px;
+  cursor: pointer;
+}
+section .index-content > .main-content > nav > img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+section .index-content > nav > span {
+  display: inline-block;
+  margin-left: 5px;
+  font-weight: 700;
+  color: #797777;
+}
+.border-bottom {
+  border-bottom: 2px blue solid;
+}
+
