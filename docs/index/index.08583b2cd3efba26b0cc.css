@@ -1,12 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #36cfc9;
 }
-#outer {
+.wrap {
+  background-color: #9999CC;
   position: relative;
-  height: 760px;
-  width: 1535px;
+  height: calc(100vh);
+  min-height: 730px;
 }
 .top-img {
   position: absolute;
@@ -91,28 +91,43 @@ body {
     opacity: 1;
   }
 }
+.footer-text {
+  position: absolute;
+  font-size: 30px;
+  top: 70%;
+  left: 45%;
+  opacity: 0;
+  cursor: pointer;
+}
+.footer-textani {
+  animation: onc 2s forwards;
+}
+@keyframes onc {
+  from {
+    opacity: 0.5;
+    text-shadow: 0 0 0px;
+  }
+  to {
+    opacity: 1;
+    text-shadow: 0 0 10px;
+  }
+}
 .footer {
   position: absolute;
   bottom: 100px;
   left: 46%;
-  width: 100px;
-  height: 20px;
-  background-color: white;
   text-align: center;
-  cursor: pointer;
   opacity: 0;
 }
 .footer-ani {
-  animation: next 3s linear  forwards;
+  animation: next 3s linear infinite forwards;
 }
 @keyframes next {
   from {
-    box-shadow: 0 0 0 white;
     text-shadow: 0 0 0 black;
     opacity: 0;
   }
   to {
-    box-shadow: 0 0 30px white;
     text-shadow: 0 0 5px black;
     opacity: 1;
   }

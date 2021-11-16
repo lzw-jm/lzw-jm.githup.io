@@ -11,7 +11,7 @@ header {
   background-color: #ffffff;
 }
 header .header-top {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -21,7 +21,7 @@ header .header-top {
 }
 header #header-title {
   font-size: 35px;
-  color: #0066ff;
+  color: #9999CC;
 }
 header .input-box {
   position: relative;
@@ -89,18 +89,21 @@ section .section-left {
 section .left-top {
   height: 100px;
   width: 100px;
-  background-color: #0061f2;
   text-align: center;
   line-height: 100px;
   font-size: 40px;
   border-radius: 5px;
+}
+section .left-top > img {
+  height: 100px;
+  width: 100px;
 }
 section .left-bottom {
   width: 100px;
   height: 30px;
   line-height: 30px;
   text-align: center;
-  background-color: #0061f2;
+  background-color: #9999CC;
   border-radius: 5px;
   color: white;
   cursor: pointer;
@@ -135,15 +138,8 @@ section .right-gray {
   color: gray;
   cursor: pointer;
 }
-section .right-bottom {
-  color: gray;
-}
-section .right-bottom span {
-  display: inline-block;
-  width: 60px;
-}
 section .sidebar {
-  width: 28%;
+  width: 29%;
   margin-left: 5px;
   min-width: 180px;
 }
