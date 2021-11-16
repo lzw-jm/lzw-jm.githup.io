@@ -14,7 +14,7 @@ header {
     background-color: #ffffff;
     min-width: 1300px;
     & .header-top {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
@@ -45,9 +45,8 @@ header {
     }
 
     & .header-text {
-        width: 300px;
-        display: flex;
-        justify-content: space-evenly;
+        width: 200px;
+        margin: 0 auto;
         font-size: 14px;
         min-width: 400px;
     }
@@ -67,7 +66,7 @@ header {
 
 section {
     height: calc(100vh - var(--h));
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
     display: flex;
     flex-flow: row;
@@ -133,6 +132,7 @@ section {
         font-size: 12px;
         color:#9999CC;
         cursor: pointer;
+        margin-bottom: 10px;
     }
     & .section-right {
         width: 80%;
@@ -161,7 +161,7 @@ section {
     }
     & .sidebar {
         width: 29%;
-        margin-left: 5px;
+        margin-left: 10px;
         min-width: 180px;
     }
 
@@ -173,10 +173,10 @@ section {
         text-align: center;
         background-color: #ffffff;
         min-width: 180px;
+        align-items: center;
     }
 
     & .sidebar-top div {
-        height: 80px;
         display: flex;
         flex-direction: column;
         padding: 15px;
@@ -254,8 +254,8 @@ section {
     & .center-top_left {
         width: 50%;
         display: flex;
-        padding-left: 5px;
-        justify-content: space-around;
+        padding-left: 9px;
+        justify-content: space-between;
     }
 
     & .center-top_left span {
@@ -263,7 +263,7 @@ section {
 
     }
     & .center-mid {
-        padding: 20px 30px;
+        padding: 20px 20px;
     }
 
     & .intro-content {
@@ -293,7 +293,7 @@ section {
             margin-bottom: 20px;
         }
         &>.main-content>h1 {
-            margin:5px;
+            margin: 5px 0;
             font-size: 23px;
             cursor: pointer;
         }
