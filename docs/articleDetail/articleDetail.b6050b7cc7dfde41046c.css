@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f6f6f6;
+  min-width: 1300px;
 }
 :root {
   --h: 150px;
@@ -63,10 +64,11 @@ body {
 .title-text,
 .last-text {
   display: inline-block;
-  text-indent: 2em;
+  text-indent: 1em;
   font-size: 14px;
   background-color: white;
   padding: 10px;
+  border-radius: 5px;
 }
 .section-frist {
   position: relative;
@@ -90,6 +92,7 @@ body {
   width: 30%;
 }
 .section-right > .author {
+  border-radius: 5px;
   background-color: white;
   height: 300px;
   padding: 20px;
