@@ -109,7 +109,7 @@ export   class Ellipsis {
         let a = document.createElement('a');
         let _this = this;
         a.innerText = '查看';
-        a.style.cssText = 'color:blue;cursor:pointer;'
+        a.style.cssText = 'color:#9999CC;cursor:pointer;'
         this.el.appendChild(a)
         a.onclick = function () {
            _this.flag = !_this.flag;

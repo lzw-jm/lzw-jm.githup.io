@@ -11,10 +11,6 @@ let leftPage = new Animata(new Translate({
             animationClassName: 'ani'
         },
         {
-            el: document.querySelector('.mleft-bot'),
-            animationClassName: 'ani'
-        },
-        {
             el: document.querySelector('.section-left'),
             animationClassName: 'ani'
         },
@@ -22,26 +18,11 @@ let leftPage = new Animata(new Translate({
 }))
 leftPage.change();
 let rightpage = new Animata(new Translate({
-    targets: [{
-            el: document.querySelector('.header-mright'),
-            animationClassName: 'rightmove'
-        },
+    targets: [
         {
-            el: document.querySelector('.sright-frist'),
-            animationClassName: 'rightmove'
-        },
-        {
-            el: document.querySelector('.sright-second'),
-            animationClassName: 'rightmove'
-        },
-        {
-            el: document.querySelector('.sright-three'),
-            animationClassName: 'rightmove'
-        },
-        {
-            el: document.querySelector('.sright-four'),
-            animationClassName: 'rightmove'
-        },
+            el:document.querySelector('.section-right'),
+            animationClassName:'rightmove'
+        }
     ]
 }))
 rightpage.change();

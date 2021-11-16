@@ -115,7 +115,7 @@ section .showmore {
   justify-content: center;
   align-items: center;
   font-size: 12px;
-  color: blue;
+  color: #9999CC;
   cursor: pointer;
 }
 section .section-right {
@@ -170,7 +170,7 @@ section .sidebar-center {
 }
 section .sidebarcenter-top {
   width: 100%;
-  padding: 5px;
+  padding: 10px;
   height: 20%;
   min-height: 100px;
   min-width: 210px;
@@ -181,13 +181,13 @@ section .sidebarcenter-top span {
   display: inline-block;
   background-color: #e5efff;
   padding: 5px;
-  color: #947bff;
+  color: #9999CC;
   border-radius: 10px;
   margin: 5px;
   cursor: pointer;
 }
 section .sidebarcenter-top span:hover {
-  background-color: blue;
+  background-color: #9999CC;
   color: white;
 }
 section .section-center {
@@ -197,7 +197,7 @@ section .section-center {
   min-height: 550px;
 }
 section .sidebarcenter-bottom {
-  padding: 5px;
+  padding: 10px;
 }
 section .sidebarcenter-bottom span {
   font-size: 50%;
@@ -205,13 +205,13 @@ section .sidebarcenter-bottom span {
   display: inline-block;
   background-color: #e5efff;
   padding: 5px;
-  color: #947bff;
+  color: #9999CC;
   border-radius: 10px;
   margin: 5px;
   cursor: pointer;
 }
 section .sidebarcenter-bottom span:hover {
-  background-color: blue;
+  background-color: #9999CC;
   color: white;
 }
 section .center-top {
@@ -232,7 +232,7 @@ section .center-top_left span {
   display: inline-block;
 }
 section .center-mid {
-  padding: 5px 30px;
+  padding: 20px 30px;
 }
 section .intro-content {
   display: none;
@@ -258,6 +258,7 @@ section .index-content > .main-content {
   margin-bottom: 20px;
 }
 section .index-content > .main-content > h1 {
+  margin: 5px;
   font-size: 23px;
   cursor: pointer;
 }

@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #f6f6f6;
 }
 
 :root {
@@ -24,11 +25,6 @@ body {
 .mleft-top {
     font-size: 4em;
 }
-
-.mleft-bot {
-    font-size: 1em;
-}
-
 .header-mleft {
     display: flex;
     height: 100%;
@@ -37,18 +33,7 @@ body {
     margin-top: 23px;
 }
 
-.header-mright {
-    width: 150px;
-    height: 70px;
-    border: 1px solid white;
-    margin-top: 40px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-right: 100px;
-    padding: 5px;
-}
+
 
 .mright-img img {
     width: 30px;
@@ -72,6 +57,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-flow: nowrap;
+    margin-top: 10px;
 }
 
 .section-left {
@@ -92,6 +78,8 @@ body {
     display: inline-block;
     text-indent: 2em;
     font-size: 14px;
+    background-color: white;
+    padding: 10px;
 }
 
 .section-frist {
@@ -115,25 +103,43 @@ body {
     padding-left: 30px;
 }
 
-.section-right div {
-    width: 60%;
-    height: 80px;
-    color: white;
-    margin-top: 20px;
-    background-color: #327ed0;
-    text-align: center;
-    line-height: 80px;
-    cursor: pointer;
-    border-radius: 20px;
-    margin-left: 10px;
-}
+
 
 .section-right {
+  
     width: 30%;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    border-left: 3px solid #cccc;
+    &>.author{
+        background-color:white;
+        height: 300px;
+        padding: 20px;
+        &>.center{
+            margin-top: 60px;
+            display: flex;
+            height: 100px;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        & .head-img{
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+        }
+        &>.foucs{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            &>span{
+                width: 60px;
+                height: 30px;
+                background-color: blue;
+                text-align: center;
+                line-height: 30px;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
 }
 
 .ani {
