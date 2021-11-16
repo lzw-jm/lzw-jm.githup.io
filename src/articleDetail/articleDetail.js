@@ -37,10 +37,10 @@ String.prototype.ellipsis = function (num) {
 }
 let url = new Url(window.location.href);
 let textId = url.get('id');
-articles.forEach(article => {
-    if (article.id == textId) {
+articles.forEach(item => {
+    if (item.id == textId) {
         let newDiv = cloneDiv.content.cloneNode(true);
-        let res = new Markdown(article.article);
+        let res = new Markdown(item.article);
         newDiv.querySelector('.title-text').innerHTML = res.parse();
         clonePar.appendChild(newDiv);
     }
