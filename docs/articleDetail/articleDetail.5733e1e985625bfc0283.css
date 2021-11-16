@@ -8,7 +8,7 @@ body {
   --h: 150px;
 }
 .header-bg {
-  background-color: #327ed0;
+  background-color: #9999CC;
   height: var(--h);
   color: white;
 }
@@ -116,9 +116,10 @@ body {
   justify-content: space-around;
 }
 .section-right > .author > .foucs > span {
+  border-radius: 5px;
   width: 60px;
   height: 30px;
-  background-color: blue;
+  background-color: #9999CC;
   text-align: center;
   line-height: 30px;
   color: white;
