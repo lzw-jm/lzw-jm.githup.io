@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f6f6f6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 :root {
@@ -11,7 +12,7 @@ body {
 header {
     border: 1px solid #ececec;
     background-color: #ffffff;
-
+    min-width: 1300px;
     & .header-top {
         width: 90%;
         margin: 0 auto;
@@ -20,6 +21,7 @@ header {
         justify-content:space-between;
         height: var(--h);
         line-height: var(--h);
+        
     }
 
     & #header-title {
@@ -192,8 +194,8 @@ section {
     & .sidebarcenter-top {
         width: 100%;
         padding: 5px;
-        height: 30%;
-        min-height: 160px;
+        height: 20%;
+        min-height: 100px;
         min-width: 210px;
     }
 
@@ -205,7 +207,7 @@ section {
         padding: 5px;
         color: #947bff;
         border-radius: 10px;
-        margin: 10px;
+        margin: 5px;
         cursor: pointer;
     }
 
@@ -220,7 +222,9 @@ section {
         margin-top: 10px;
         min-height: 550px;
     }
-
+    & .sidebarcenter-bottom{
+        padding: 5px;
+    }
     & .sidebarcenter-bottom span {
         font-size: 50%;
         height: 20%;
@@ -229,7 +233,7 @@ section {
         padding: 5px;
         color: #947bff;
         border-radius: 10px;
-        margin: 10px;
+        margin: 5px;
         cursor: pointer;
     }
 
@@ -285,23 +289,16 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
+        &>.main-content{
+            margin-bottom: 20px;
+        }
         &>.main-content>h1 {
-            font-size: 19px;
+            font-size: 23px;
             cursor: pointer;
         }
-
-        &>.main-content>nav>img {
-            width: 20px;
-            height: 20px;
-            vertical-align: middle;
-        }
-
-        &>nav>span {
-            display: inline-block;
-            margin-left: 5px;
-            font-weight: 700;
-            color: #797777;
+        &>.main-content>article{
+            margin-bottom: 10px;
+            letter-spacing: .9px;
         }
     }
 }

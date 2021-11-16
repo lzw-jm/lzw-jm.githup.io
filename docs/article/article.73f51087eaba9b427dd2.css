@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f6f6f6;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 :root {
   --h: 50px;
@@ -9,6 +10,7 @@ body {
 header {
   border: 1px solid #ececec;
   background-color: #ffffff;
+  min-width: 1300px;
 }
 header .header-top {
   width: 90%;
@@ -169,8 +171,8 @@ section .sidebar-center {
 section .sidebarcenter-top {
   width: 100%;
   padding: 5px;
-  height: 30%;
-  min-height: 160px;
+  height: 20%;
+  min-height: 100px;
   min-width: 210px;
 }
 section .sidebarcenter-top span {
@@ -181,7 +183,7 @@ section .sidebarcenter-top span {
   padding: 5px;
   color: #947bff;
   border-radius: 10px;
-  margin: 10px;
+  margin: 5px;
   cursor: pointer;
 }
 section .sidebarcenter-top span:hover {
@@ -194,6 +196,9 @@ section .section-center {
   margin-top: 10px;
   min-height: 550px;
 }
+section .sidebarcenter-bottom {
+  padding: 5px;
+}
 section .sidebarcenter-bottom span {
   font-size: 50%;
   height: 20%;
@@ -202,7 +207,7 @@ section .sidebarcenter-bottom span {
   padding: 5px;
   color: #947bff;
   border-radius: 10px;
-  margin: 10px;
+  margin: 5px;
   cursor: pointer;
 }
 section .sidebarcenter-bottom span:hover {
@@ -249,20 +254,16 @@ section .index-content {
   flex-direction: column;
   justify-content: space-between;
 }
+section .index-content > .main-content {
+  margin-bottom: 20px;
+}
 section .index-content > .main-content > h1 {
-  font-size: 19px;
+  font-size: 23px;
   cursor: pointer;
 }
-section .index-content > .main-content > nav > img {
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-}
-section .index-content > nav > span {
-  display: inline-block;
-  margin-left: 5px;
-  font-weight: 700;
-  color: #797777;
+section .index-content > .main-content > article {
+  margin-bottom: 10px;
+  letter-spacing: 0.9px;
 }
 .border-bottom {
   border-bottom: 2px blue solid;
