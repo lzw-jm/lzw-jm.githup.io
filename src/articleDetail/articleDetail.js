@@ -33,6 +33,7 @@ let textId = url.get('id');
 articles.forEach(item => {
     if (item.id == textId) {
         let newDiv = cloneDiv.content.cloneNode(true);
+        console.log(item.article);
         let res = new Markdown(item.article);
         console.log(res.parse());
         newDiv.querySelector('.title-text').innerHTML = res.parse();
