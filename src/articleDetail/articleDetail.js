@@ -28,13 +28,6 @@ let rightpage = new Animata(new Translate({
 rightpage.change();
 var cloneDiv = document.querySelector('template');
 var clonePar = document.querySelector('.section-left');
-String.prototype.ellipsis = function (num) {
-    let str = this;
-    if (num < this.length) {
-        str = this.substring(0, num) + '...';
-    }
-    return str;
-}
 let url = new Url(window.location.href);
 let textId = url.get('id');
 articles.forEach(item => {

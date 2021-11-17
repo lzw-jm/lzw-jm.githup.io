@@ -23,7 +23,7 @@ header .header-top {
 }
 header #header-title {
   font-size: 35px;
-  color: #9999CC;
+  color: #434343;
 }
 header .input-box {
   position: relative;
@@ -104,7 +104,7 @@ section .left-bottom {
   height: 30px;
   line-height: 30px;
   text-align: center;
-  background-color: #9999CC;
+  background-color: #434343;
   border-radius: 5px;
   color: white;
   cursor: pointer;
@@ -114,7 +114,7 @@ section .showmore {
   justify-content: center;
   align-items: center;
   font-size: 12px;
-  color: #9999CC;
+  color: #434343;
   cursor: pointer;
   margin-bottom: 10px;
 }
@@ -179,15 +179,16 @@ section .sidebarcenter-top span {
   font-size: 50%;
   height: 20%;
   display: inline-block;
-  background-color: #e5efff;
+  background-color: #434343;
   padding: 5px;
-  color: #9999CC;
+  color: #434343;
   border-radius: 10px;
   margin: 5px;
   cursor: pointer;
+  color: cornsilk;
 }
 section .sidebarcenter-top span:hover {
-  background-color: #9999CC;
+  background-color: #000000;
   color: white;
 }
 section .section-center {
@@ -203,15 +204,16 @@ section .sidebarcenter-bottom span {
   font-size: 50%;
   height: 20%;
   display: inline-block;
-  background-color: #e5efff;
+  background-color: #434343;
   padding: 5px;
-  color: #9999CC;
+  color: #434343;
   border-radius: 10px;
   margin: 5px;
   cursor: pointer;
+  color: cornsilk;
 }
 section .sidebarcenter-bottom span:hover {
-  background-color: #9999CC;
+  background-color: #000000;
   color: white;
 }
 section .center-top {
@@ -261,6 +263,7 @@ section .index-content > .main-content > h1 {
   margin: 5px 0;
   font-size: 23px;
   cursor: pointer;
+  color: #333333;
 }
 section .index-content > .main-content > article {
   margin-bottom: 10px;
