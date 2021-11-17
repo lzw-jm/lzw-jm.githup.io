@@ -30,19 +30,6 @@ body {
   justify-content: flex-start;
   margin-top: 23px;
 }
-.mright-img img {
-  width: 30px;
-  height: 40px;
-  vertical-align: middle;
-}
-.mright-toptext {
-  font-size: 10px;
-}
-.mright-text {
-  display: flex;
-  flex-flow: column;
-  padding: 5px;
-}
 .section-box {
   width: 60%;
   height: calc(100vh --h);
@@ -56,12 +43,6 @@ body {
   height: 100%;
   margin-right: 10px;
 }
-.htitle {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: 500;
-}
 .title-text,
 .last-text {
   display: inline-block;
@@ -73,10 +54,6 @@ body {
 }
 .section-frist {
   position: relative;
-}
-.openall {
-  color: #999999;
-  cursor: pointer;
 }
 .section-right {
   width: 30%;
