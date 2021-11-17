@@ -34,6 +34,7 @@ articles.forEach(item => {
     if (item.id == textId) {
         let newDiv = cloneDiv.content.cloneNode(true);
         let res = new Markdown(item.article);
+        console.log(res.parse());
         newDiv.querySelector('.title-text').innerHTML = res.parse();
         clonePar.appendChild(newDiv);
     }
