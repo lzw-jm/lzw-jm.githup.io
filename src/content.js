@@ -9,7 +9,6 @@ function parseHTML(text) {
     oDiv.innerHTML = text;
     let newText = '';
     newText = oDiv.childNodes[0].innerHTML;
-    console.log(newText)
     return newText
 }
 export default [{
